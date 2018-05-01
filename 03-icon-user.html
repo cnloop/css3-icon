@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .btn-box {
+            /* position: relative; */
+            display: inline-block;
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            left: 50px;
+        }
+
+        .icon-user {
+            display: inline-block;
+            width: 14px;
+            height: 18px;
+            background: #333;
+            border-radius: 7px 7px 5px 5px;
+            position: absolute;
+            left: 8px;
+        }
+
+        .icon-user:before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 10px;
+            background: #333;
+            position: absolute;
+            top: 17px;
+            left: 3px;
+        }
+
+        .icon-user:after {
+            content: '';
+            display: inline-block;
+            width: 0px;
+            height: 0px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 12px solid #333;
+            border-radius: 50%;
+            position: absolute;
+            top: 18px;
+            left: -13px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="btn-box">
+        <span class="icon-user"></span>
+    </a>
+</body>
+
+</html>
